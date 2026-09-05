@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -162,12 +163,31 @@ h2{font-size:clamp(40px,7vw,70px);margin:0 0 20px}
     <h2 class="english">Our Memories</h2>
     <p class="sub">Some little moments that became my favorite memories.</p>
     <div class="memories">
-      <div class="photo"><img src="images/photo1.png" alt="Memory 1" onerror="this.style.display='none'">♡</div>
-      <div class="photo"><img src="images/photo2.png" alt="Memory 2" onerror="this.style.display='none'">♡</div>
-      <div class="photo"><img src="images/photo3.png" alt="Memory 3" onerror="this.style.display='none'">♡</div>
-      <div class="photo"><img src="images/photo4.png" alt="Memory 4" onerror="this.style.display='none'">♡</div>
-      <div class="photo"><img src="images/photo5.png" alt="Memory 5" onerror="this.style.display='none'">♡</div>
-      <div class="photo"><img src="images/photo6.png" alt="Memory 6" onerror="this.style.display='none'">♡</div>
+
+      <div class="photo">
+        <img src="photo1.png" alt="Memory 1">
+      </div>
+
+      <div class="photo">
+        <img src="photo2.png" alt="Memory 2">
+      </div>
+
+      <div class="photo">
+        <img src="photo3.png" alt="Memory 3">
+      </div>
+
+      <div class="photo">
+        <img src="photo4.png" alt="Memory 4">
+      </div>
+
+      <div class="photo">
+        <img src="photo5.png" alt="Memory 5">
+      </div>
+
+      <div class="photo">
+        <img src="photo6.png" alt="Memory 6">
+      </div>
+
     </div>
     <a class="btn" href="#final">One last thing ♡</a>
   </div>
@@ -177,7 +197,7 @@ h2{font-size:clamp(40px,7vw,70px);margin:0 0 20px}
   <div class="wrap fade">
     <h2 class="english">A Moment For You</h2>
     <div class="final-photo">
-      <img src="images/final.png" alt="Our favorite photo" onerror="this.style.display='none'">
+      <img src="final.png" alt="Our favorite photo">
       <div style="height:100%;display:flex;align-items:center;justify-content:center;color:#604d5c;font:24px 'Cormorant Garamond'">ضعوا أجمل صورة هنا 🤍</div>
     </div>
     <p class="note">كل عام وانت حبيبي، وكل عام وانت أجمل صدفة وأحلى ذكرى وأغلى شخص. أتمنى تكون سنتك العشرين بداية لكل شيء جميل تستحقه. 🤍</p>
@@ -187,8 +207,6 @@ h2{font-size:clamp(40px,7vw,70px);margin:0 0 20px}
 </section>
 
 <script>
-// عدّاد بسيط: غيّري تاريخ الميلاد هنا إذا تبين العدّاد يكون حقيقي.
-// مثال: new Date("2026-09-06T00:00:00")
 const birthday = new Date("2026-09-06T00:00:00").getTime();
 
 function tick(){
@@ -198,12 +216,18 @@ function tick(){
   const h=Math.floor(diff/3600000); diff%=3600000;
   const m=Math.floor(diff/60000); diff%=60000;
   const s=Math.floor(diff/1000);
+
   document.getElementById("days").textContent=String(d).padStart(2,"0");
   document.getElementById("hours").textContent=String(h).padStart(2,"0");
   document.getElementById("mins").textContent=String(m).padStart(2,"0");
   document.getElementById("secs").textContent=String(s).padStart(2,"0");
 }
-tick(); setInterval(tick,1000);
+
+tick();
+setInterval(tick,1000);
 </script>
+
 </body>
 </html>
+```
+
